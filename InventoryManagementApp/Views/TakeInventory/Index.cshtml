@@ -1,0 +1,38 @@
+﻿@model InventoryManagementApp.ViewModels.TakeInventoryVM
+
+@Html.Display($"{ ViewBag.Title}")
+
+@using (Html.BeginForm("Index", "TakeInventory", new { id = Model == null ? 0 : Model.AssetKey}))
+{
+    @Html.Label("Item:")
+    @Html.TextBoxFor(m => m.AssetKey, new { placeholder = "Enter Asset Tag" })
+
+    @Html.Label("Inventory Owner:")
+    @Html.TextBoxFor(m => m.InventoryOwner, new { placeholder = "e.g. Arthur Dent" })
+
+    @Html.Label("Location")
+    @Html.DropDownListFor(m => m.LocationId, (List<SelectListItem>
+    )ViewBag.GetLocationDropDown, "--Select Location--", new { @class = "form-control" })
+
+    @Html.Label("Client Site:")
+    @Html.DropDownListFor(m => m.ClientSiteId, (List<SelectListItem>)ViewBag.GetClientSiteDropDown, "--Select Client Site--", new { @class = "form-control" })
+
+    <Button type="submit">Submit</Button> //todo I think this is supposed to be an onchangeevent not a submit button
+    
+    
+    //todo thake these out of the index page
+    if (Model == null)
+    {
+        @Html.Partial("_StartPage")
+    }
+    if (Model != null && Model.AssetKey != null && Model.ProductId != 0)
+    {
+        @*@Html.Partial("_ItemFoundGrid", Model)*@
+        @*@Html.Action("ItemFoundGrid", "TakeInventory", new { id = Model.AssetKey})*@ 
+        @await Component.InvokeAsync("ItemFound", new { id = Model.AssetKey})
+    }
+    if (Model != null && Model.AssetKey != null && Model.ProductId == 0)
+    {
+        @Html.Partial("_NotFound", Model)
+    }
+}

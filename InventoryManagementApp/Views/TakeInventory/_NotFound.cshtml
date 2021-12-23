@@ -1,0 +1,16 @@
+﻿@model InventoryManagementApp.ViewModels.TakeInventoryVM
+
+<br />
+<br />
+<br />
+
+@Html.Label($"Item {Model.AssetKey} Not Found") @*todo-make red, new { @class = "text-danger"})*@
+
+<button type="submit" formaction=@Url.Action("AddModifyItemModal") formmethod="get">Add Item?</button>  @*n.b. this button is for the form in the TakeInventory folder's Index.cshtml page*@ 
+<button class="text-danger">Cancel?</button>
+
+@*<input type="submit" value="submit!" onclick="@Url.Action("CreateNewAsset", "TakeInventory")" />*@
+
+<input type="submit" value="todo: move me into the modal!" formaction=@Url.Action("CreateNewAsset") />
+
+<input type="submit" value ="Add Item?" formaction=@Url.Action("AddModifyItemModal") />

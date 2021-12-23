@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/lib/datatables/css/dataTables.bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/lib/custom/CustomStyles.css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    
+
+    <div id="navBarMenu">
+        <a>Home</a>
+        <a>Take Inventory</a>
+        <a>View Inventory</a>
+        <img id="CGIlogo" src="~/Images/CGIlogo.png" />
+    </div>
+
+    <h1>@ViewBag.Title</h1>
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+    <script src="/lib/jquery/jquery.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="/lib/datatables/js/jquery.dataTables.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

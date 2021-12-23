@@ -1,0 +1,59 @@
+﻿@using InventoryManagementApp.Service
+@model AssetDTO
+<head>
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/lib/datatables/css/dataTables.bootstrap.css" />
+</head>
+
+Add Inventory
+<button type="submit" class="btn btn-danger">Close button x</button>
+@using (Html.BeginForm("AddModifyItemModal", "TakeInventory", FormMethod.Post, new { enctype = "multipart/form-data", id = Model.AssetKey }))
+{
+    @Html.LabelFor(a => a.AssetKey)
+    @Html.TextBoxFor(a => a.AssetKey)
+    <br />
+    @Html.LabelFor(a => a.Product)
+    @Html.DropDownListFor(a => a.ProductId, (List<SelectListItem>)ViewBag.GetProductDropDown, "--Select Product--")
+    <br />
+    @Html.LabelFor(a => a.Manuafcturer)
+    @Html.DropDownListFor(a => a.ManuafcturerId, (List<SelectListItem>)ViewBag.GetManufacturerDropDown, "--Select Manufacturer--")
+    <br />
+    @Html.LabelFor(a => a.Model)
+    @Html.DropDownListFor(a => a.ModelId, (List<SelectListItem>)ViewBag.GetModelDropDown, "--Select Model--")
+    <br />
+    @Html.LabelFor(a => a.Location)
+    @Html.DropDownListFor(a => a.LocationId, (List<SelectListItem>)ViewBag.GetLocationDropDown, "--Select Location--")
+    <br />
+    @Html.LabelFor(a => a.ClientSite)
+    @Html.DropDownListFor(a => a.ClientSiteId, (List<SelectListItem>)ViewBag.GetClientSiteDropDown, "--Select Client Site--")
+    <br />
+    @Html.LabelFor(a => a.SerialNumber)
+    @Html.TextBoxFor(a => a.SerialNumber)
+    <br />
+    @Html.LabelFor(a => a.ItemName)
+    @Html.TextBoxFor(a => a.ItemName)
+    <br />
+    @Html.LabelFor(a => a.PurchaseDate)
+    @Html.TextBoxFor(a => a.PurchaseDate, new { @class = "form-control datepicker" })
+    <br />
+    @Html.LabelFor(a => a.InventoryOwner)
+    @Html.TextBoxFor(a => a.InventoryOwner)
+    <br />
+    @Html.LabelFor(a => a.InventoriedBy)
+    @Html.TextBoxFor(a => a.InventoriedBy)
+    <br />
+    @Html.LabelFor(a => a.InventoryDate)
+    @Html.TextBoxFor(a => a.InventoryDate, new { @class = "form-control datepicker" })
+    <br />
+    @Html.LabelFor(a => a.IsDisposed)
+    @Html.CheckBoxFor(a => a.IsDisposed.Value)
+    <br />
+
+    <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+    </div>
+}
+
+<script src="/lib/jquery/jquery.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.js"></script>

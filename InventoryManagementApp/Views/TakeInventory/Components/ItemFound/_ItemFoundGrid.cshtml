@@ -1,0 +1,73 @@
+﻿@model InventoryManagementApp.Service.AssetDTO
+
+<script>
+    alert('hi');
+    $(document).ready(function () {
+        $("#myTable").DataTable();
+    });
+    alert('hi2');
+</script>
+
+<br />
+<br />
+<br />
+
+
+<table id="myTable" class="table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.Label("Asset Tag")
+            </th>
+            <th>
+                @Html.Label("Product")
+            </th>
+            <th>
+                @Html.Label("Manufacturer")
+            </th>
+            <th>
+                @Html.Label("Model")
+            </th>
+            <th>
+                @Html.Label("Serial Number")
+            </th>
+            <th>
+                @Html.Label("Item Name")
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(a => a.AssetKey)
+            </td>
+            <td>
+                @Html.DisplayFor(a => a.Product.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(a => a.Manuafcturer.ManufacturerName)
+            </td>
+            <td>
+                @Html.DisplayFor(a => a.Model.ModelName)
+            </td>
+            <td>
+                @Html.DisplayFor(a => a.SerialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(a => a.ItemName)
+            </td>
+        </tr>
+    </tbody>
+</table>
+@Html.Label("Last Inventory Date:") @Html.DisplayFor(a => a.InventoryDate)
+
+<br />
+
+<button>Submit</button>
+<button>Modify</button>
+<button>Cancel</button>
+
+
+
+
+

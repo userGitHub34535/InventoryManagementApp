@@ -1,0 +1,9 @@
+﻿body {
+    background-color: blue;
+}
+
+
+#navBarMenu {
+    position: fixed;
+    top: 0
+}
