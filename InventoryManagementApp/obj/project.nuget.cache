@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J9zhL186SN/ehH1RsZ8MXjLp+raYaOciImqrgCAW/DSU160okMwziFhpc6ntk0Y6aubuqbQqA5crh8bsnoRXcw==",
+  "dgSpecHash": "toSX2a9iBUfWT7VKqTZvGw3ekud262eMWq8ZEvtQDk8JmXypfE4hwqNqRUX3bUkd/IGULNbmSKkKcL9ZFjbQvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp\\InventoryManagementApp.csproj",
+  "projectFilePath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp\\InventoryManagementApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sheila.subbiah\\.nuget\\packages\\bootstrap\\3.0.1\\bootstrap.3.0.1.nupkg.sha512",
     "C:\\Users\\sheila.subbiah\\.nuget\\packages\\jquery\\1.9.0\\jquery.1.9.0.nupkg.sha512",

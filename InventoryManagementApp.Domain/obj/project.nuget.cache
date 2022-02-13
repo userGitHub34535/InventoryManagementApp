@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cMf3vS0wqKbMKPlQ1Vnuv7Qh/ADb+cOvuAsRwUNh6U0Db0910ZLQHoK0Fw8GumXfW12YReAr8NOKa9Wc5TKrvg==",
+  "dgSpecHash": "CdmxhcC+XpOtTh1alP/xi2VJg7BMzZDVUfqO6aXNJaph2Z78Bbgl5SMYKTwCZ4rBTlHDEA+oSvZe42eQImKYOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj",
+  "projectFilePath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -7120,11 +7120,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp\\InventoryManagementApp.csproj",
+      "projectUniqueName": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp\\InventoryManagementApp.csproj",
       "projectName": "InventoryManagementApp",
-      "projectPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp\\InventoryManagementApp.csproj",
+      "projectPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp\\InventoryManagementApp.csproj",
       "packagesPath": "C:\\Users\\sheila.subbiah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp\\obj\\",
+      "outputPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -7144,14 +7144,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj": {
-              "projectPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj"
+            "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj": {
+              "projectPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj"
             },
-            "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj"
+            "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj"
             },
-            "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj": {
-              "projectPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj"
+            "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj": {
+              "projectPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj"
             }
           }
         }

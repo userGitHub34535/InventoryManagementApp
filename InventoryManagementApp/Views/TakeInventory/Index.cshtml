@@ -2,7 +2,7 @@
 
 @Html.Display($"{ ViewBag.Title}")
 
-@using (Html.BeginForm("Index", "TakeInventory", new { id = Model == null ? 0 : Model.AssetKey}))
+@using (Html.BeginForm("Index", "TakeInventory", new { id = Model == null ? 0 : Model.AssetKey }))
 {
     @Html.Label("Item:")
     @Html.TextBoxFor(m => m.AssetKey, new { placeholder = "Enter Asset Tag" })
@@ -18,21 +18,25 @@
     @Html.DropDownListFor(m => m.ClientSiteId, (List<SelectListItem>)ViewBag.GetClientSiteDropDown, "--Select Client Site--", new { @class = "form-control" })
 
     <Button type="submit">Submit</Button> //todo I think this is supposed to be an onchangeevent not a submit button
-    
-    
-    //todo thake these out of the index page
+
+
+    //todo take these out of the index page
     if (Model == null)
     {
-        @Html.Partial("_StartPage")
-    }
-    if (Model != null && Model.AssetKey != null && Model.ProductId != 0)
-    {
-        @*@Html.Partial("_ItemFoundGrid", Model)*@
-        @*@Html.Action("ItemFoundGrid", "TakeInventory", new { id = Model.AssetKey})*@ 
-        @await Component.InvokeAsync("ItemFound", new { id = Model.AssetKey})
+        @Html.Partial("_StartScanningMsg")
     }
     if (Model != null && Model.AssetKey != null && Model.ProductId == 0)
     {
         @Html.Partial("_NotFound", Model)
     }
+    if (Model != null && Model.AssetKey != null && Model.ProductId != 0)
+    {
+        @*@Html.Partial("_ItemFoundGrid", Model)*@
+        @*@Html.Action("ItemFoundGrid", "TakeInventory", new { id = Model.AssetKey})*@
+        @await Component.InvokeAsync("ItemFound", new { id = Model.AssetKey })
+    }
 }
+
+@*todo-move these into the libraries*@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>

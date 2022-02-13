@@ -241,6 +241,11 @@ namespace InventoryManagementApp.Controllers
             return View();
         }
 
+        public IActionResult MyModal()
+        {
+            return View();
+        }
+
         [HttpGet]
         public IActionResult Details(int Id)
         {

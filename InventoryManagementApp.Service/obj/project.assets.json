@@ -6505,11 +6505,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj",
+      "projectUniqueName": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj",
       "projectName": "InventoryManagementApp.Service",
-      "projectPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj",
+      "projectPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj",
       "packagesPath": "C:\\Users\\sheila.subbiah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Service\\obj\\",
+      "outputPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -6529,8 +6529,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj": {
-              "projectPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj"
+            "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj": {
+              "projectPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj"
             }
           }
         }

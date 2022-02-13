@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jy55IejC/xIUOxX0EGWu5BQn0MzWu5y7/tQqTqDZAMQhWw8rczrzKbKybEOWQr7APx3v2ivASZL8eataL0TIjA==",
+  "dgSpecHash": "nT/93OrLkmGnby+jdo4PY2EzxUImKVbXdvYyzHitX0IiL8UIVscYHqnJ1Ol17gmJHJdpt33jzanIlJOCnvvJMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj",
+  "projectFilePath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Service\\InventoryManagementApp.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sheila.subbiah\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\sheila.subbiah\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

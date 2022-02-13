@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sYcGf+3oUa6gvbLq3GCF1TOORvbY2BWyFNSHib4Fv+r1V0OkKg+cKIpzBEJV+//PeEywd/2TEP7Gfr7VU/YYCA==",
+  "dgSpecHash": "3dPXDud1UnVD3EoGBOgCTLSs2iifmSE56HQk/4j3oA31TFNgM0JlXOFLMuNU0a0rNvQAD4rLuANSu+6xU2JyXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj",
+  "projectFilePath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Data\\InventoryManagementApp.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sheila.subbiah\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\sheila.subbiah\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

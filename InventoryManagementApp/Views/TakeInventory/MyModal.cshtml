@@ -1,0 +1,77 @@
+﻿<div>
+    <h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Take Inventory</h2>
+    <fieldset>
+        <legend style="color:orangered">LEGEND ON PAGE TODO-DELETE</legend>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <button id="btnShowModal" type="button"
+                            class="btn btn-sm btn-default pull-left col-lg-11 button button4">
+                        Add Item?
+                    </button>
+
+                    <div class="modal fade" tabindex="-1" id="addInventoryModal"
+                         data-keyboard="false" data-backdrop="static">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Add Inventory</h4>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        ×
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text"
+                                                   placeholder="Login Username" id="inputUserName" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Login Password"
+                                                   type="password" id="inputPassword" />
+                                        </div>
+                                    todo-add the _addModifyItemModal here
+                                    
+                                    
+                                    
+                                    </form>
+
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary button button4">Submit</button>
+                                    <button type="button" id="btnHideModal" class="btn btn-primary button button4">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</div>
+<footer>
+    @*<p style="background-color: Yellow; font-weight: bold; color:blue; text-align: center; font-style: oblique">    </p>*@
+</footer>
+    @*todo-move these into the libraries*@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#btnShowModal").click(function () {
+                $("#addInventoryModal").modal('show');
+                //$("#loginModal").modal('show');
+            });
+
+            $("#btnHideModal").click(function () {
+                $("#addInventoryModal").modal('hide');
+            });
+        });
+</script> 

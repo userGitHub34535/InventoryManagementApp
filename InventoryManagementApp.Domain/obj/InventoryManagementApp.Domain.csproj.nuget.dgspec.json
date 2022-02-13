@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj": {}
+    "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj": {
+    "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj",
         "projectName": "InventoryManagementApp.Domain",
-        "projectPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj",
+        "projectPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\InventoryManagementApp.Domain.csproj",
         "packagesPath": "C:\\Users\\sheila.subbiah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sheila.subbiah\\Source\\Repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\obj\\",
+        "outputPath": "C:\\Users\\sheila.subbiah\\source\\repos\\InventoryManagementApp\\InventoryManagementApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

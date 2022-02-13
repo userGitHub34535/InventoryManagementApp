@@ -763,7 +763,6 @@ C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementA
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\_AddModifyItemModal.cshtml.g.cs
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\_Details.cshtml.g.cs
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\_NotFound.cshtml.g.cs
-C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\_StartPage.cshtml.g.cs
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\_ViewStart.cshtml.g.cs
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\InventoryManagementApp.RazorTargetAssemblyInfo.cache
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\InventoryManagementApp.RazorTargetAssemblyInfo.cs
@@ -774,3 +773,5 @@ C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementA
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\InventoryManagementApp.dll
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\InventoryManagementApp.pdb
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\InventoryManagementApp.genruntimeconfig.cache
+C:\Users\sheila.subbiah\source\repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\MyModal.cshtml.g.cs
+C:\Users\sheila.subbiah\source\repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\_StartScanningMsg.cshtml.g.cs
