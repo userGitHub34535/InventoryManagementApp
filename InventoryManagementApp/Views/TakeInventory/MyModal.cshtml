@@ -1,77 +1,114 @@
-﻿<div>
-    <h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Take Inventory</h2>
-    <fieldset>
-        <legend style="color:orangered">LEGEND ON PAGE TODO-DELETE</legend>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+﻿@using InventoryManagementApp.Service
+@model AssetDTO
 
-                    <button id="btnShowModal" type="button"
-                            class="btn btn-sm btn-default pull-left col-lg-11 button button4">
-                        Add Item?
-                    </button>
+<div class="modal fade" id="#addModifyItem">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Item</h4>
+                <button type="button" class="close" data-dismiss="modal"><span>x</span></button>
+            </div>
+            <div class="modal-body">
+                <form action="AddModifyItemModal" method="post">
 
-                    <div class="modal fade" tabindex="-1" id="addInventoryModal"
-                         data-keyboard="false" data-backdrop="static">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Add Inventory</h4>
-                                    <button type="button" class="close" data-dismiss="modal">
-                                        ×
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <input class="form-control" type="text"
-                                                   placeholder="Login Username" id="inputUserName" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" placeholder="Login Password"
-                                                   type="password" id="inputPassword" />
-                                        </div>
-                                    todo-add the _addModifyItemModal here
-                                    
-                                    
-                                    
-                                    </form>
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary button button4">Submit</button>
-                                    <button type="button" id="btnHideModal" class="btn btn-primary button button4">
-                                        Cancel
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-save="modal">Save</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
             </div>
         </div>
-    </fieldset>
+    </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button id="btnShowModal" type="button"
+        class="btn btn-sm btn-default pull-left col-lg-11 button button4">
+    Add Item?
+</button>
+
+<div class="modal fade" tabindex="-1" id="addInventoryModal"
+     data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Inventory</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    ×
+                </button>
+            </div>
+            <div class="modal-body">
+                @*<form>
+                        <div class="form-group">
+                            <input class="form-control" type="text"
+                                   placeholder="Login Username" id="inputUserName" />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Login Password"
+                                   type="password" id="inputPassword" />
+                        </div>
+                    </form>*@
+                @using (Html.BeginForm("AddModifyItemModal", "TakeInventory", FormMethod.Get, new { enctype = "multipart/form-data", id = Model.AssetKey }))
+                {
+                    //todo-add the _addModifyItemModal here
+                    @Html.LabelFor(a => a.AssetKey, new { @class = "form-control" })
+                    @Html.TextBoxFor(a => a.AssetKey, new { @class = "form-control" })
+                    <br />
+                    @Html.LabelFor(a => a.Product, new { @class = "form-control" })
+                    @Html.DropDownListFor(a => a.ProductId, (List<SelectListItem>)ViewBag.GetProductDropDown, "--Select Product--", new { @class = "form-control" })
+
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary button button4">Submit</button>
+                <button type="button" id="btnHideModal" class="btn btn-primary button button4">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <footer>
     @*<p style="background-color: Yellow; font-weight: bold; color:blue; text-align: center; font-style: oblique">    </p>*@
 </footer>
-    @*todo-move these into the libraries*@
+@*todo-move these into the libraries*@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
 
-        $(document).ready(function () {
-            $("#btnShowModal").click(function () {
-                $("#addInventoryModal").modal('show');
-                //$("#loginModal").modal('show');
-            });
-
-            $("#btnHideModal").click(function () {
-                $("#addInventoryModal").modal('hide');
-            });
+    $(document).ready(function () {
+        $("#btnShowModal").click(function () {
+            $("#addInventoryModal").modal('show');
         });
+
+        $("#btnHideModal").click(function () {
+            $("#addInventoryModal").modal('hide');
+        });
+    });
 </script> 

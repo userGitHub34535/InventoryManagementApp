@@ -227,6 +227,88 @@ namespace InventoryManagementApp.Controllers
             return PartialView("_AddModifyItemModal", asset ?? new AssetDTO());
         }
 
+        [HttpGet]
+        public IActionResult MyModal(int id, TakeInventoryVM userDetails)
+        {
+            //when id  = 0, we are adding a new item
+            //when id != 0, we are modifying an item
+            AssetDTO asset = _inventoryService.GetAssetById(id);
+
+            #region Product drop down
+            //build Product drop down
+            List<ProductDTO> products = _inventoryService.GetAllProductsDTO();
+
+            List<SelectListItem> productDropdown = new List<SelectListItem>();
+            foreach (ProductDTO p in products)
+            {
+                productDropdown.Add(new SelectListItem() { Text = p.ProductName, Value = p.ProductKey.ToString() });
+            }
+
+            ViewBag.GetProductDropDown = productDropdown;
+            #endregion
+
+            #region Manufacturer drop down
+            //build Manufacturer drop down
+            List<ManufacturerDTO> manufacturers = _inventoryService.GetAllManufacturersDTO();
+
+            List<SelectListItem> manufacturerDropdown = new List<SelectListItem>();
+            foreach (ManufacturerDTO m in manufacturers)
+            {
+                manufacturerDropdown.Add(new SelectListItem() { Text = m.ManufacturerName, Value = m.ManufacturerKey.ToString() });
+            }
+
+            ViewBag.GetManufacturerDropDown = manufacturerDropdown;
+            #endregion
+
+            #region Model drop down
+            //build Model drop down
+            List<ModelDTO> models = _inventoryService.GetAllModelsDTO();
+
+            List<SelectListItem> modelDropdown = new List<SelectListItem>();
+            foreach (ModelDTO m in models)
+            {
+                modelDropdown.Add(new SelectListItem() { Text = m.ModelName, Value = m.ModelKey.ToString() });
+            }
+
+            ViewBag.GetModelDropDown = modelDropdown;
+            #endregion
+
+            #region ClientSite Drop Down 
+            //build client site DropDownList
+            List<ClientSiteDTO> clientSites = _inventoryService.GetAllClientSites()
+                                                               .Select(x => new ClientSiteDTO
+                                                               {
+                                                                   ClientSiteKey = x.ClientSiteKey,
+                                                                   ClientSiteName = x.ClientSiteName
+                                                               })
+                                                               .ToList();
+
+            List<SelectListItem> clientSiteDropdown = new List<SelectListItem>();
+            foreach (ClientSiteDTO site in clientSites)
+            {
+                clientSiteDropdown.Add(new SelectListItem() { Text = site.ClientSiteName, Value = site.ClientSiteKey.ToString() });
+            }
+
+            ViewBag.GetClientSiteDropDown = clientSiteDropdown;
+            #endregion
+
+            //todo-fix the repeated DropDown code
+            #region Location Drop Down
+            List<SelectListItem> locationDropDown = new List<SelectListItem>();
+            List<Location> locations = _inventoryService.GetAllLocations();
+
+            foreach (Location location in locations)
+            {
+                locationDropDown.Add(new SelectListItem() { Text = location.LocationName, Value = location.LocationKey.ToString() });
+            }
+
+            ViewBag.GetLocationDropDown = locationDropDown;
+            #endregion
+
+            return View("MyModal", asset ?? new AssetDTO());
+        }
+
+
         [HttpPost]
         public IActionResult AddModifyItemModal(int id, AssetDTO asset)
         {
@@ -241,10 +323,6 @@ namespace InventoryManagementApp.Controllers
             return View();
         }
 
-        public IActionResult MyModal()
-        {
-            return View();
-        }
 
         [HttpGet]
         public IActionResult Details(int Id)

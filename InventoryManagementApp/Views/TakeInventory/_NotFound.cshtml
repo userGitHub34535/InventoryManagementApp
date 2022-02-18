@@ -6,11 +6,18 @@
 
 @Html.Label($"Item {Model.AssetKey} Not Found") @*todo-make red, new { @class = "text-danger"})*@
 
-<button type="submit" formaction=@Url.Action("AddModifyItemModal") formmethod="get">Add Item?</button>  @*n.b. this button is for the form in the TakeInventory folder's Index.cshtml page*@ 
+<button type="submit" formaction=@Url.Action("AddModifyItemModal") formmethod="get">Add Item?</button>  @*n.b. this button is for the form in the TakeInventory folder's Index.cshtml page*@
 <button class="text-danger">Cancel?</button>
 
 @*<input type="submit" value="submit!" onclick="@Url.Action("CreateNewAsset", "TakeInventory")" />*@
 
 <input type="submit" value="todo: move me into the modal!" formaction=@Url.Action("CreateNewAsset") />
 
-<input type="submit" value ="Add Item?" formaction=@Url.Action("AddModifyItemModal") />
+<input type="submit" value ="Add Item?" id="modalShow" formaction=@Url.Action("MyModal") formmethod="get"/>
+
+@*<button id="btnShowModal" type="button"
+        class="btn btn-sm btn-default pull-left col-lg-11 button button4">
+    Add Item?
+</button>*@
+
+<button type="button"class="btn btn-primary" data-toggle="ajax-modal" data-target="#addModifyItem" data-url="@Url.Action("MyModal")">Add Item?</button>
