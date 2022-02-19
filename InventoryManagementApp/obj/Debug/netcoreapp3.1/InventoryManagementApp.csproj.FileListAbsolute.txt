@@ -759,7 +759,6 @@ C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementA
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\Components\ItemFound\_ItemFoundGrid.cshtml.g.cs
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\Index.cshtml.g.cs
-C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\ModalPopUp.cshtml.g.cs
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\_AddModifyItemModal.cshtml.g.cs
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\_Details.cshtml.g.cs
 C:\Users\sheila.subbiah\Source\Repos\InventoryManagementApp\InventoryManagementApp\obj\Debug\netcoreapp3.1\Razor\Views\TakeInventory\_NotFound.cshtml.g.cs
